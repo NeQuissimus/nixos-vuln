@@ -1,0 +1,14 @@
+{ pkgs }:
+{
+  public = ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDFcKqaAAjtW9Ak6Ck2kdqPNQI8KvtuZ6hZroR1uCDCM'';
+
+  private = pkgs.writeText "id_ed25519" ''
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAxXCqmgAI7VvQJOgpNpHajzUCPCr7bmeoWa6EdbggwjAAAAJB9B4oCfQeK
+    AgAAAAtzc2gtZWQyNTUxOQAAACAxXCqmgAI7VvQJOgpNpHajzUCPCr7bmeoWa6EdbggwjA
+    AAAEAiN4U9emN7P0nuw9imUYWQe0kpZBL/VlvbHPOiU9t0OjFcKqaAAjtW9Ak6Ck2kdqPN
+    QI8KvtuZ6hZroR1uCDCMAAAAC25lcXVpQG5peHVzAQI=
+    -----END OPENSSH PRIVATE KEY-----
+  '';
+}
